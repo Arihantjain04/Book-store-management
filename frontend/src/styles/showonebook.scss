@@ -1,0 +1,58 @@
+.one-book-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  > h1 {
+    margin: 1.5rem 3rem;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: left;
+  }
+
+  .one-book-container {
+    width: 100%;
+    display: flex;
+    padding: 5%;
+    align-items: center;
+
+    .one-book-card {
+      background: linear-gradient(to right, #0d5086, #083b6b);
+      max-width: 50%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 2%;
+      gap: 10%;
+      border: 2px solid rgba(255, 255, 255, 0.6);
+      box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+
+      > table {
+        width: 100%;
+        border-collapse: collapse;
+        // margin-top: 10px;
+
+        > tbody {
+          > tr {
+
+            .key{
+                font-weight: 600;
+                font-size: 1.2rem;
+            }
+
+            > td {
+            //   text-align: center;
+              color: white;
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
