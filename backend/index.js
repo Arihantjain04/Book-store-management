@@ -9,9 +9,10 @@ const app = express()
 
 app.use(cors(
     {
-        origin: 'http://localhost:5173',
+        origin: ["https://book-store-management-frontend.vercel.app"],
         method: ['GET', 'POST', 'PUT', 'DELETE'],
-        allowHeaders: ['Content-Type']
+        allowHeaders: ['Content-Type'],
+        credentials: true
     }
 ))
 
