@@ -20,7 +20,7 @@ const CreateOneBook = () => {
     setLoading(true);
     if(data.title && data.author && data.publishYear){
       axios
-      .post("http://localhost:5555/api/books", data)
+      .post("https://book-store-management-two.vercel.app/api/books", data)
       .catch((error) => {
         setLoading(false);
         console.log(error);
