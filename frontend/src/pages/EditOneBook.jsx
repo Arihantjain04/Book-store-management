@@ -14,7 +14,7 @@ const EditOneBook = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`http://localhost:5555/api/books/${id}`)
+      .get(`https://book-store-management-two.vercel.app/api/books/${id}`)
       .then((res) => {
         setTitle(res.data.title);
         setAuthor(res.data.author);
